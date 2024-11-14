@@ -58,7 +58,7 @@ jobs: #Trabalhos a serem executados
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: seninha/exemplo-ci:latest
